@@ -1,0 +1,91 @@
+.header {
+    width: 100%;
+    height: 450px;  /* 배너 세로 크기 */
+}
+
+
+/* logo */
+.netflix-logo {
+    height: 20px;
+
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: 1;  /* 배너 이미지보다 위에 있도록 */
+}
+
+/* profile */
+.profile-picture {
+    width: 20px; 
+    /* height: 15px; */
+    border-radius: 0px;
+
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    z-index: 1;  /* 배너 이미지보다 위에 있도록 */
+}
+
+
+/* banner (recommend video) */
+.recommend-video {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: left 50%;
+
+    top: 0px;
+    left: 0px;
+}
+
+.recommend-video-info {
+    width: 300px;
+
+    position: absolute;
+    top: 100px;
+    left: 15px;
+}
+
+.recommend-video-name {
+    font-size: 32px;
+    font-weight: 900;
+
+    margin-bottom: 10px;
+}
+
+.recommend-video-synop {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+
+.recommend-video-play,
+.my-playlist {
+    width: 80px;
+
+    background-color: rgba(128,128,128, 0.3);
+    /* opacity: 30%; */   /* 글자도 투명하게 되는 것을 방지하려면 rgba()를 이용하여 배경색에서 투명도를 설정할 것 */
+    border: none;
+
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* hover effect */
+.recommend-video-play:hover ,
+.my-playlist:hover {
+    background-color: rgba(128,128,128, 0.5);
+    font-size: 15px;
+    transition: 0.1s;
+}

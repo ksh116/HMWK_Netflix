@@ -1,0 +1,134 @@
+.video-themes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    padding-top: 20px; 
+}
+
+/* 반응형 (추천 영상 이미지 개수 조절) */
+@media (max-width: 530px) {
+    .video-originals-3,
+    .video-originals-4,
+    .video-originals-5,
+    .video-originals-6,
+    .video-originals-7,
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-3,
+    .video-now-4,
+    .video-now-5,
+    .video-now-6,
+    .video-now-7,
+    .video-now-8 {
+        display: none;
+    }      
+}
+
+@media (min-width: 531px) and (max-width: 739px) {
+    .video-originals-4,
+    .video-originals-5,
+    .video-originals-6,
+    .video-originals-7,
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-4,
+    .video-now-5,
+    .video-now-6,
+    .video-now-7,
+    .video-now-8 {
+        display: none;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 899px) {
+    .video-originals-5,
+    .video-originals-6,
+    .video-originals-7,
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-5,
+    .video-now-6,
+    .video-now-7,
+    .video-now-8 {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1084px) {
+    .video-originals-6,
+    .video-originals-7,
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-6,
+    .video-now-7,
+    .video-now-8 {
+        display: none;
+    }
+}
+
+@media (min-width: 1085px) and (max-width: 1279px) {
+    .video-originals-7,
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-7,
+    .video-now-8 {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1450px) {
+    .video-originals-8 {
+        display: none;
+      }
+    
+    .video-now-8 {
+        display: none;
+    }
+}
+
+
+.video-originals,
+.video-now {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+
+    position: relative;
+    margin-left: 15px;
+}
+
+.video-themes-text {
+    font-family: bebasneue;
+}
+
+.video-originals-container,
+.video-now-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 28px;
+
+    margin-right: 20px;
+}
+
+.video-poster {
+    width: 155px;
+    height: 230px;
+}
+
+/* image hover effect */
+.video-poster:hover {
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+}

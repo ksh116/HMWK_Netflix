@@ -1,0 +1,14 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 전반적인 스타일 */
+body {
+    font-family: bebasneue, Roboto, Arial;  /* 글씨체 : 기본은 bebasneue(넷플릭스 기본체), 없으면 Roboto, Arial */
+    margin: 0;
+    padding-bottom: 30px;
+    
+    background-color: #181818;  /* 웹브라우저 기본 전체 배경이 해당 색으로 설정됨 */
+    color: white;
+}
